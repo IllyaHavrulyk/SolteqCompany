@@ -1,0 +1,244 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+// ≥1200px
+@include media-breakpoint-down(lg)
+
+    .people-section
+        background: url(/img/roofwithpeopleLG.png) no-repeat
+        height: 840px
+        width: 100%
+        background-size: cover
+        background-position: center top
+ 
+    .color-section
+        margin-top: 50px
+    .panel-section
+        display: none
+    
+    .skyscaper-section
+        display: none
+    
+    .faccades-section
+        display: none
+    
+    .section
+        display: none
+    
+    .main-footer
+        .footer-div
+        
+    .roof-section
+        display: none
+    .product-showcase-section
+        display: none
+    ul li a 
+        text-decoration: none
+        color: orange
+        padding: 50px 100px
+        font-size: 18px
+        transition: all .4s ease-in-out
+        font-family: $monserrat-semi-bold
+        &:hover 
+            text-decoration: none
+            transition: all .4s ease-in-out
+// ≥992px
+@include media-breakpoint-down(md)
+    .logo
+        display: none
+    ul li a 
+        text-decoration: none
+        color: orange
+        padding: 50px 80px
+        font-size: 18px
+        transition: all .4s ease-in-out
+        font-family: $monserrat-semi-bold
+        &:hover 
+            text-decoration: none
+            transition: all .4s ease-in-out
+    .md
+        display: none
+
+    .people-section
+        background: url(/img/roofwithpeopleMD.png) no-repeat
+        height: 840px
+        width: 100%
+        background-size: cover
+        background-position: center top
+    .parallax-section
+        height: 300px
+        width: 100%
+        background: url(/img/parallax-imgMD.png) no-repeat
+        background-size: cover
+        background-position: center
+        
+    .body-form_textarea
+        display: block
+        margin: 0 20%
+
+// ≥768px
+@include media-breakpoint-down(sm)
+
+
+    ul li a 
+        text-decoration: none
+        color: orange
+        padding: 20px 45px
+        font-size: 18px
+        transition: all .4s ease-in-out
+        font-family: $monserrat-semi-bold
+        &:hover 
+            text-decoration: none
+            transition: all .4s ease-in-out
+
+    .logo 
+        position: fixed
+        top: 0
+        margin-top: 16px
+        display: none
+        
+    
+    nav ul 
+        max-height: 0px
+        background: #000
+        
+    
+    nav.black ul 
+        background: #000
+
+
+    .showing 
+        max-height: 34em
+
+
+
+    .parallax-section
+        height: 300px
+        width: 100%
+        background: url(/img/parallax-imgSM.png) no-repeat
+        background-size: cover
+        background-position: center
+
+    .menu-icon 
+        display: block
+      
+    .people-section
+        margin-top: 50px
+        background: url(/img/roofwithpeopleSM.png) no-repeat
+        height: 440px
+        width: 100%
+        background-size: cover
+        background-position: center 
+    .color-section
+        margin-top: 50px
+
+    .specs-section
+        
+    .logo
+        display: block
+        width: 70px
+        height: 70px
+        margin-top: 30px
+
+    .main-footer
+        background-color: #03151B
+        height: 200px
+        color: #fff
+        span 
+            display: inline-block
+            
+        img 
+          
+        .footer-div
+            display: none
+    .sm 
+        display: none
+
+    .footer_logo
+        display: none
+
+    .form1
+        display: none
+
+    .form2
+        display: block
+        &.body-form_email2
+            width: 10px
+        
+
+// ≥576px
+@include media-breakpoint-down(xs)
+    
+
+    ul li a 
+        text-align: center
+        text-decoration: none
+        color: orange
+        padding: 10px 20px
+        //padding-left: 20px
+        font-size: 13px
+        transition: all .4s ease-in-out
+        font-family: $monserrat-semi-bold
+        &:hover 
+            text-decoration: none
+            transition: all .4s ease-in-out
+    .specs-section
+        margin-top: -5px
+
+    .logo
+        display: inline-block
+        width: 50px
+        height: 50px
+        margin-top: 50px
+        margin-left: 20px
+       
+    nav 
+        
+    .people-section
+        margin-top: 70px
+        background: none url(/img/roofwithpeopleSM.png) no-repeat
+        height: 250px
+        width: 100%
+        background-size: cover
+        background-position: center top
+
+    .parallax-section
+        height: 300px
+        width: 100%
+        background: url(/img/parralax-imgXS.png) no-repeat
+        background-size: cover
+        background-position: center
+        
+    .color-section
+        margin-top: 50px
+    
+    .main-footer
+        background-color: #03151B
+        height: 200px
+        color: #fff
+        span 
+            display: inline-block
+            font-family: $monserrat-thin-italic
+            padding-bottom: 10px
+    .footer_logo
+        display: inline-block
+        width: 32px
+        height: 32px
+            
+        
+           
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm)
+
+
+// ≤768px
+@include media-breakpoint-up(md)
+
+// ≤992px
+@include media-breakpoint-up(lg)
+
+// ≤1200px
+@include media-breakpoint-up(xl)

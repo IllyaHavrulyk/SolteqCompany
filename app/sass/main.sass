@@ -1,0 +1,979 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+.monserrat-medium
+	font-family: $monserrat-medium
+
+.orange
+	color: #FF7D27
+.big
+	font-size: 61px
+.grid 
+	display: grid
+
+
+body
+	margin: 0
+	padding: 0
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-size: 1rem
+	overflow-x: hidden
+	overflow-y: scroll
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: #FF7D27
+	padding: 20px 35px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.top-nav
+	padding-top: 51px
+	.phone
+		&_text
+			color: #ffffff
+
+.section
+	background-color: #191c21
+	position: relative
+	width: 100%
+	height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	z-index: 2
+	.video-right
+		text-align: center
+		font-size: 21px
+		font-family: $monserrat-thin-italic
+		span.video-title-span
+			font-family: $monserrat-semi-bold
+			font-size: 32px
+		span.video-span
+
+	h1
+		text-align: center
+		font-size: 6rem
+		font-family: "Cookie"
+		padding: 20px
+		margin: 15px
+		z-index: 1
+		opacity: 0.8
+
+
+.video-container
+	position: absolute
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100%
+
+.color-overlay
+	position: absolute
+	top:
+	left: 0
+	background-color: white
+	width: 100%
+	height: 100vh
+	opacity: 0.4
+.logo 
+	line-height: 60px
+	position: fixed
+	float: left
+	margin: 16px 46px
+	color: #fff
+	font-weight: bold
+	font-size: 20px
+	letter-spacing: 2px
+nav 
+	background-color: #03151B
+	height: 75px
+	transition: all .4s ease-in-out
+
+
+.navbar-brand 
+	color: black
+	font-weight: bold
+	margin-top: 15px
+	font-size: 44px
+	transition: all .4s ease-in-out
+
+
+ul 
+	display: flex
+	list-style-type: none
+	flex-wrap: wrap
+	float: right
+
+
+li 
+  margin-top: 25px
+
+
+ul li a 
+	text-decoration: none
+	color: orange
+	padding: 50px 200px
+	font-size: 18px
+	transition: all .4s ease-in-out
+	font-family: $monserrat-semi-bold
+	&:hover 
+		text-decoration: none
+		transition: all .4s ease-in-out
+
+.banner 
+  background-size: cover
+  background-color: orange
+  height: 100vh
+
+
+.text 
+  max-width: 960px
+  margin: 80px auto
+
+
+nav.black 
+	background-color: #03151B
+	opacity: 0.7
+	height: 75px
+	transition: all .4s ease-in-out
+	a 
+		color: white
+		transition: all .4s ease-in-out
+  
+.call-btn
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 10px 35px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+	
+.house-section
+	position: relative
+	font-family: $monserrat
+	margin-top: 1000px
+    height: 840px
+	z-index: 0
+	padding-left: 200px
+	background-size: cover
+	background-position: center
+	color: #ffffff
+	&_content
+		
+		padding-bottom: 420px
+		padding-top: 420px
+		&_undertitle_second 
+			
+		&_title
+			font-size: 40px
+			
+.description-section
+	position: relative
+	text-align: center
+	width: 100%
+	height: 330px
+	font-family: $lora-regular
+	font-weight: normal
+	line-height: 2.5
+	z-index: 2
+	&_title
+		font-family: $monserrat
+		font-size: 40px
+	&_text
+		display: block
+		&__span
+			padding-top: 30px
+		&__span_second
+			padding-top: 30px
+		&__title
+			font-family: $lora-bold
+			font-size: 20px
+
+		&__bold
+			line-height: 2.8
+			padding-top: 30px
+			font-family: $monserrat
+			font-size: 20px
+
+.product-showcase
+	&-section 
+		width: 100%
+		height: 100vh
+	&_card
+		text-align: center
+		justify-content: center
+		margin-top: 40px
+	&_image
+		margin-left: 40px
+
+	&_title
+		padding-top: 30px
+		border-bottom: 1px #D9E0E4 solid
+		padding-bottom: 20px
+		h3 
+			font-size: 25px
+			font-family: $monserrat-extra-bold
+		&__undertitle
+			font-family: $monserrat-thin-italic
+			font-size: 20px
+
+	&_title2
+		padding-top: 30px
+		border-bottom: 1px #D9E0E4 solid
+		padding-bottom: 20px
+		h3 
+			font-size: 25px
+			font-family: $monserrat-extra-bold
+		&__undertitle
+			font-family: $monserrat-thin-italic
+			font-size: 20px
+	&_text
+		font-family: $monserrat-thin-italic
+		font-size: 17px
+		padding-top: 10px
+		font-weight: 700
+
+.faccades
+	&-section 
+		margin-top: 676px
+		width: 100%
+		height: 100vh
+	&_card
+		text-align: center
+		justify-content: center
+		margin-top: 40px
+	&_image
+		margin-left: 20px
+
+	&_title
+		padding-top: 30px
+		h3 
+			font-size: 25px
+			font-family: $monserrat-extra-bold
+		&__undertitle
+			padding-top: 20px
+			padding-bottom: 20px
+			font-family: $lora-italic
+			font-size: 20px
+			border-bottom: 1px #D9E0E4 solid
+
+	&_text
+		font-family: $lora-regular
+		font-size: 17px
+		padding-top: 20Fpx
+		font-weight: 700
+
+.new-section 
+	text-align: center
+	padding-bottom: 50px
+	&_title 
+		width: 100%
+		padding-top: 80px
+		font-family: $monserrat-medium
+		font-size: 33px
+	&_undertitle
+		font-family: $monserrat-thin-italic
+		font-size: 20px
+		padding-bottom: 20px
+		border-bottom: 1px #D9E0E4 solid
+	&_megatitle
+		width: 100%
+		padding-top: 30px
+		padding-bottom: 80px
+		font-family: $monserrat-medium
+		font-size: 33px
+	&_text
+		font-family: $monserrat-medium-italic
+		padding-top: 30px
+.new_bg
+	padding-top: 50px
+	margin-top: 850px	
+	background: #EFEFEF
+		
+.people-section
+	background: url(/img/roofwithpeopleXL.png) no-repeat
+	height: 840px
+	width: 100%
+	background-size: cover
+	background-position: left
+	
+.roof-section
+	text-align: center
+	&_content
+		padding: 40px 10px
+		&__text
+
+		&__title
+			font-family: $monserrat
+		&__undertitle
+			font-family: $monserrat-thin-italic
+	
+.roof-items
+	padding-left: 20px
+	padding-right: 20px
+	margin-top: -70px
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 30px
+	text-align: center
+	&_item
+		height: 200px
+		
+		&__title
+			padding-top: 20px
+			font-family: $monserrat
+		&__undertitle
+			padding: 20px
+			border-bottom: 1px #D9E0E4 solid
+			font-size: 15px
+			font-family: $monserrat
+		&__text
+			padding: 30px
+			font-family: $monserrat-thin-italic
+		&__image
+			padding: 20px
+			width: 100%
+			height: 400px
+		&__image2
+			width: 100%
+			margin-top: 400px
+			padding: 20px
+			height: 400px
+			
+
+.margin6div
+	font-size: 29.5px			
+	margin-top: -16px
+.parallax-section
+	height: 300px
+	width: 100%
+	text-align: center
+	font-family: $monserrat-thin-italic
+	padding: 60px
+	background: url(/img/parallax-img.png) no-repeat
+	background-size: cover
+	background-position: center
+	&_title
+		font-size: 110px
+
+.backpar-section
+	background-size: cover
+	background-position: center
+	color: #ffffff
+	height: 600px
+
+.marginwave
+	margin-left: 100px 
+	margin-top: 35px
+	
+.marginmd
+	margin-left: 150px
+	
+	
+	// height: 500px
+	// width: 100%
+	// background-image: url(img/parallax-img.png)
+	// &_block
+	// 	width: 100%
+		
+	// 	background: url(/img/parallax-img.png)
+	// 	background-position: 0 0
+
+
+.samples-section
+	text-align: center
+	margin-top: 800px
+	&_content
+		padding: 40px 10px
+		&__text
+
+		&__title
+			text-align: center
+			padding: 20px
+		&__undertitle
+			font-family: $lora-italic
+	
+.samples-items
+	padding: 50px 10px
+	grid-template-columns: repeat(4, 1fr)
+	grid-gap: 30px
+	&_item
+		height: 200px
+		background-color: #000
+		&__title
+			padding-top: 20px
+		&__undertitle
+			padding: 20px
+			border-bottom: 1px #D9E0E4 solid
+		&__text
+			padding: 30px
+
+.skyscaper-section
+	margin-top: 500px	
+	padding-bottom: 10px 
+	text-align: center
+	height: 420px
+	width: 100%
+	background-size: cover
+	background-position: center
+	color: #fff
+	&_content
+		padding-top: 120px 
+		padding-left: 1100px
+		text-align-last: left
+		&__title
+			font-family: $monserrat-extra-bold
+			font-size: 50px
+			text-shadow: 3px 5px 2px #474747
+		&__text
+			font-family: $monserrat-medium
+			font-size: 31px
+			text-shadow: 3px 5px 2px #474747
+
+.energo-section
+	background: #EFEFEF
+	&_content
+		text-align: center
+		padding-top: 50px
+		padding-bottom: 80px
+		&__title
+			font-family: $monserrat-extra-bold
+			font-size: 43px
+	&_leftside
+		text-align: left
+		
+		&__title
+			font-family: $monserrat
+			font-smooth: 2em
+			font-size: 33px
+			padding-top: 30px
+			padding-bottom: 30px
+			padding-right: 15px
+			text-align: right
+		&__text
+			color: #000
+			text-align: right 
+			font-smooth: 2em
+			font-size: 22px
+			font-family: $monserrat-thin-italic
+			padding: 15px 
+		&__button
+			text-align: right
+			padding-top: 50px
+			padding-bottom: 20px
+			padding-right: 20px
+	&_rightside
+
+.panel-section
+	&_content
+		text-align: center
+		&__title
+			font-size: 43px
+		&__text
+			font-family: $monserrat-thin-italic
+			font-size: 22px
+			font-smooth: 2em
+			padding-top: 5px
+	&_items
+		padding-top: 50px
+		grid-template-columns: repeat(3,1fr)
+		grid-gap: 10px
+		&__item
+			width: 600px
+			height: 400px
+			text-align: center
+			&__image
+				width: 600px
+				height: 300px
+			&__content
+				&__title
+					font-family: $monserrat
+					border-bottom: 1px #D9E0E4 solid
+
+.color-section
+	margin-top: 800px
+	&_content
+		text-align: center
+		padding-top: 50px
+		&__title
+			font-size: 43px
+		&__text
+			font-family: $monserrat-thin-italic
+			font-smooth: 2em
+			font-size: 20px
+	&_items
+		grid-template-columns: repeat(3, 1fr)
+		&__item
+			max-width: 300px
+			max-height: 400px
+.cover-section
+	margin-top: 30px
+	padding: 40px
+	background-color: #E9E9E9
+	&_content
+		text-align: center
+		&__title
+			font-size: 47px
+
+.architecture-section
+	&_content
+		padding: 60px
+		text-align: right
+		&__image
+			img
+	&_leftside
+		padding-left: 20px
+		text-align: right
+		&__title
+			span 
+	&_leftside
+		text-align: left
+		
+		&__title
+			font-family: $monserrat
+			font-smooth: 2em
+			font-size: 33px
+			padding-top: 30px
+			padding-bottom: 30px
+			padding-right: 15px
+			text-align: right
+		&__text
+			color: #000
+			text-align: right 
+			font-smooth: 2em
+			font-size: 22px
+			font-family: $monserrat-thin-italic
+			padding: 15px 
+		&__button
+			text-align: right
+			padding-top: 50px
+			padding-bottom: 20px
+			padding-right: 20px
+	&_rightside
+
+.form-section
+	margin-top: 100px
+	font-smooth: 2em
+	&_content
+		font-smooth: 5em
+		&__title
+
+		&__text
+
+		&__undertitle
+			font-size: 20px
+	&_products
+
+	&_product
+		
+		&_title
+			padding-top: 50px
+			text-align: center
+			font-family: $monserrat
+			border-bottom: 1px #D9E0E4 solid
+			padding-bottom: 20px
+		&_undertitle
+			text-align: center
+			font-smooth: 5em
+			font-family: $monserrat-thin-italic
+			padding-bottom: 50px
+			font-size: 20px
+
+.specs-section
+	background-color: #03151B
+	color: #fff
+	padding: 50px
+	&_content
+		text-align: center
+		&__title
+			font-family: $monserrat		
+			font-size: 33px
+	&_items
+		&__item
+			font-family: $monserrat-thin-italic
+			padding-top: 70px
+		&__right
+
+			img 
+				padding-top: 20px
+				padding-bottom: 20px
+				width: 100%
+				height: 100%
+
+.advantage-section
+	background-color: #fafafa
+	font-smooth: 2em
+	background: #03151B
+	color: #fff
+	&_content
+		&__title
+			text-align: center
+			font-family: $monserrat-extra-bold
+			padding: 30px
+		&__text
+			font-family: $monserrat-semi-bold
+			img 
+				width: 45px
+				height: 45px
+			span 
+				font-family: $monserrat-semi-bold
+				font-size: 23px
+
+.main-footer
+	background-color: #03151B
+	height: 200px
+	color: #fff
+	span 
+		font-family: $monserrat-thin-italic
+		padding-bottom: 30px
+		
+	img 
+		padding: 30px
+
+.modal
+	width: 100%
+	height: 300px
+	text-align: center
+	z-index: 10
+	background-color: orange
+	&-content 
+	
+.body-form
+	background: #03151B
+	color: #fff
+	font-family: $monserrat-semi-bold
+	&_email
+		display: block
+		margin: 0 40%
+		border: none
+	&_textarea
+		display: block
+		margin: 0 28%
+		border: none
+	&_text
+
+.form-div
+	margin-top: 30vh
+	background: orange
+	padding: 40px
+	border-radius: 10px
+		
+.body-form_textarea
+	display: block
+	margin: 0 30%
+
+.form1
+	display: block
+
+.form2
+	display: none
+@media (max-width: 1366px)
+	.video-background-section
+		display: none
+
+	.panel-section
+		&_content
+			text-align: center
+			&__title
+				font-size: 43px
+			&__text
+				font-family: $monserrat-thin-italic
+				font-size: 22px
+				font-smooth: 2em
+				padding-top: 5px
+		&_items
+			padding-top: 50px
+			grid-template-columns: 1fr 1fr 
+			grid-gap: 10px
+			&__item
+				width: 600px
+				height: 400px
+				text-align: center
+				&__image
+					width: 600px
+					height: 300px
+				&__content
+					&__title
+						font-family: $monserrat
+						border-bottom: 1px #D9E0E4 solid
+
+		.product-showcase
+			&-section 
+				width: 100%
+				height: 100vh
+			&_card
+				text-align: center
+				justify-content: center
+				margin-top: 40px
+			&_image
+				margin-left: 40px
+			&_title
+				border-bottom: 1px #D9E0E4 solid
+				padding-bottom: 40px
+				h3 
+					font-size: 25px
+					font-family: $monserrat-extra-bold
+				&__undertitle
+					font-family: $monserrat-thin-italic
+					font-size: 20px
+
+			&_text
+				font-family: $monserrat-thin-italic
+				font-size: 17px
+				padding-top: 10px
+				font-weight: 700
+            
+    .logo
+        height: 24px
+        width: 24px
+    .form-section
+        margin-top: 900px
+    .margin20
+        margin-top: 3px
+        margin-right: 30px
+    .margin30
+        margin-top: 40px
+        margin-right: 35px
+    .margin15
+        margin-top: 20px
+        margin-right: 15px
+    .margin40img
+        max-width: 300px
+    .margin40pw 
+        margin-top: -55px
+        margin-right: 40px
+    
+	.main-footer
+		background-color: #03151B
+		height: 200px
+		color: #fff
+		span 
+			font-family: $monserrat-thin-italic
+			padding-bottom: 30px
+		img 
+			padding: 30px
+		.footer-div
+			padding-top: 100px
+			padding-left: 300px
+	.margin60
+		margin-top: 35px
+		margin-left: 30px
+	.margin60img
+		margin-left: 10px
+		
+	nav 
+		position: fixed
+		width: 100%
+		line-height: 60px
+		z-index: 5
+		background-color: #03151B
+
+	.roof-items
+		&_item
+			&__image
+				
+			&__image2
+				margin-top: 500px
+	.color-section
+		margin-top: 1000px
+	.marginwave
+		width: 300px
+		height: 350px
+		
+	.logo
+		margin-top: 25px
+		width: 90px
+		height: 90px
+	
+	ul li a 
+		text-decoration: none
+		color: orange
+		padding: 50px 150px
+		font-size: 18px
+		transition: all .4s ease-in-out
+		font-family: $monserrat-semi-bold
+		&:hover 
+			text-decoration: none
+			transition: all .4s ease-in-out
+  
+	.people-section
+		background: url(/img/roofwithpeopleMD.png) no-repeat
+		height: 840px
+		width: 100%
+		background-size: cover
+		background-position: left
+	.parallax-section
+		background: url(/img/parallax-img1366.png) no-repeat
+		background-position: center
+		height: 235px
+		z-index: 6
+	.margin1
+		margin-top: 27px
+		width: 400px
+		height: 403px
+	.margin1div
+		margin-bottom: px
+	.margin2
+		width: 400px
+		height: 430px
+	.margin3
+		width: 380px
+		height: 430px
+		margin-right: 5px
+	.margin4
+		width: 400px
+		height: 430px
+	.margin5
+		width: 380px
+		height: 430px
+		margin-top: 20px
+		&div
+	.margin6
+		margin-left: 70px
+	.textmid 
+		font-size: 38px
+		margin-top: 3px
+	
+	.margin6div
+		font-size: 30px
+		margin-top: -2px
+
+	.margin5div
+		margin-top: 50px
+
+	.h1mid
+		font-size: 32px
+	.form-section
+		margin-top: 100px
+		font-smooth: 2em
+		&_content
+			font-smooth: 5em
+			&__title
+
+			&__text
+
+			&__undertitle
+				font-size: 20px
+		&_products
+
+		&_product
+			
+			&_title2
+				padding-top: 50px
+				text-align: center
+				font-family: $monserrat
+				border-bottom: 1px #D9E0E4 solid
+				padding-bottom: 20px
+				font-size: 31px
+				margin-top: 9px
+			&_undertitle
+				text-align: center
+				font-smooth: 5em
+				font-family: $monserrat-thin-italic
+				padding-bottom: 50px
+				font-size: 20px
+	.marginmd
+		margin-left: 80px
+
+
+		
+@import "media" // Always at the end
